@@ -1,1 +1,469 @@
-ok by kui
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Wanfa Travel">
+      <meta name="keywords" content="travel">
+      <meta name="author" content="kuizhiqing">
+      <title>
+      </title>
+
+    <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+    footer { vertical-align: baseline; background-color: rgb(111, 84, 153); margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; width: 100%; height: 80px; position: absolute; }
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+    background-color: rgba(111, 84, 153, 0.5);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      padding-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+        background: none;
+            box-shadow:none;
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+          background: url(img/logo.png) no-repeat;
+          background-size: 70px;
+          width: 100px;
+          height: 20px;
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+    }
+      #telephone a {
+              background-color: #872b5e;
+                      height: 29px;
+                              line-height: 28px;
+                                      display: inline-block;
+                                              margin-bottom: 8px;
+                                                      outline: none;
+                                                              text-align: center;
+                                                                      background-repeat: no-repeat;
+                                                                              vertical-align: top;
+                                                                                      overflow: hidden;
+                                                                                              color: white;
+                                                                                                      border-radius: 8px;
+                                                                                                              font-family: "Microsoft Yahei";
+      }
+    </style>
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/bootstrap-responsive.css" rel="stylesheet">
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+          <!--[if lt IE 9]>
+            <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]-->
+    </head>
+    <body>
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#"></a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="#">首页</a></li>
+                <li><a href="#">普罗旺斯</a></li>
+                <li><a href="#">婚纱摄影</a></li>
+                <li><a href="#">私人订制</a></li>
+                <li><a href="#">酒店预定</a></li>
+                <li><a href="#">意大利</a></li>
+                <li><a href="#">摩洛哥</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+            <div id="telephone" class="clearfix">
+                <a href="https://www.facebook.com/Eurasia-281829942190180/" target="_blank" class="social-fb" title="http://facebook.com">Facebook</a>
+                <a href="" class="telephone">04 91 55 02 74</a>
+            </div>
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/nav1.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>路线一  薰衣草之旅</h1>
+              <p class="lead">
+              一些介绍文字
+              </p>
+              <a class="btn btn-large btn-primary" href="#">马上预定</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/nav2.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>另外一些</h1>
+              <p class="lead">
+              介绍文字
+              </p>
+              <a class="btn btn-large btn-primary" href="#">马上查看</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/nav1.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>私人定制</h1>
+              <p class="lead">
+              简单介绍
+              </p>
+              <a class="btn btn-large btn-primary" href="#">查看详情</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row row-fluid">
+          <div class="col-sm-10 col-lg-9">
+        <div class="col-sm-6 col-md-4" style="background-image: url(img/nav1.jpg); background-size: cover; height: 400px;"> 
+          <h2>薰衣草</h2>
+          <p>
+          介绍文字是这样说的
+          介绍文字是这样说的
+          介绍文字是这样说的
+          介绍文字是这样说的
+          </p>
+          <p><a class="btn" href="#">查看&raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="col-sm-6 col-md-4" style="background-image: url(img/nav2.jpg); background-size: cover; height: 400px;"> 
+          <h2>薰衣草</h2>
+          <p>
+          介绍文字是这样说的
+          介绍文字是这样说的
+          介绍文字是这样说的
+          介绍文字是这样说的
+          </p>
+          <p><a class="btn" href="#">查看&raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="col-sm-6 col-md-4" style="background-image: url(img/nav1.jpg); background-size: cover; height: 400px;"> 
+          <h2>薰衣草</h2>
+          <p>
+          介绍文字是这样说的
+          介绍文字是这样说的
+          介绍文字是这样说的
+          介绍文字是这样说的
+          </p>
+          <p><a class="btn" href="#">查看&raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="col-sm-6 col-md-4" style="background-image: url(img/nav2.jpg); background-size: cover; height: 400px;"> 
+          <h2>薰衣草</h2>
+          <p>
+          介绍文字是这样说的
+          介绍文字是这样说的
+          介绍文字是这样说的
+          介绍文字是这样说的
+          </p>
+          <p><a class="btn" href="#">查看&raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="col-sm-6 col-md-4" style="">
+          <img class="img-circle" src="img/nav1.jpg">
+          <h2>薰衣草</h2>
+          <p>
+          介绍文字是这样说的
+          介绍文字是这样说的
+          介绍文字是这样说的
+          介绍文字是这样说的
+          </p>
+          <p><a class="btn" href="#">查看&raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="col-sm-6 col-md-4" style="">
+          <img class="img-circle" src="img/nav1.jpg">
+          <h2>薰衣草</h2>
+          <p>
+          介绍文字是这样说的
+          介绍文字是这样说的
+          介绍文字是这样说的
+          介绍文字是这样说的
+          </p>
+          <p><a class="btn" href="#">查看&raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="col-sm-6 col-md-4" style="">
+          <img class="img-circle" src="img/nav1.jpg">
+          <h2>薰衣草</h2>
+          <p>
+          介绍文字是这样说的
+          介绍文字是这样说的
+          介绍文字是这样说的
+          介绍文字是这样说的
+          </p>
+          <p><a class="btn" href="#">查看&raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="col-sm-6 col-md-4" style="">
+          <img class="img-circle" src="img/nav1.jpg">
+          <h2>薰衣草</h2>
+          <p>
+          介绍文字是这样说的
+          介绍文字是这样说的
+          介绍文字是这样说的
+          介绍文字是这样说的
+          </p>
+          <p><a class="btn" href="#">查看&raquo;</a></p>
+        </div><!-- /.span4 -->
+          </div>
+          <div class="col-sm-2 col-lg-3">
+              <ul>
+                  <li><a href="#">预定酒店</a></li>
+                  <li><a href="#">预定酒店</a></li>
+                  <li><a href="#">预定酒店</a></li>
+                  <li><a href="#">预定酒店</a></li>
+                  <li><a href="#">预定酒店</a></li>
+                  <li><a href="#">预定酒店</a></li>
+              </ul>
+          </div>
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+      <footer id="foot">
+        <p style="text-align: center; line-height: 80px; color: white;">&copy; 2016 玩法旅游公司 &middot; 
+        </p>
+      </footer>
+      <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>
