@@ -7,9 +7,15 @@
       <meta name="description" content="Wanfa Travel">
       <meta name="keywords" content="travel">
       <meta name="author" content="kuizhiqing">
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/bootstrap-responsive.css" rel="stylesheet">
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+          <!--[if lt IE 9]>
+            <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]-->
       <title>
       </title>
-
     <style>
 
     /* GLOBAL STYLES
@@ -102,9 +108,8 @@
 
     .carousel-caption {
       background-color: transparent;
-      position: static;
       max-width: 550px;
-      padding: 0 20px;
+      padding: 0 60px;
       margin-top: 200px;
     }
     .carousel-caption h1,
@@ -248,29 +253,13 @@
         line-height: 1.5;
       }
     }
-      #telephone a {
-              background-color: #872b5e;
-                      height: 29px;
-                              line-height: 28px;
-                                      display: inline-block;
-                                              margin-bottom: 8px;
-                                                      outline: none;
-                                                              text-align: center;
-                                                                      background-repeat: no-repeat;
-                                                                              vertical-align: top;
-                                                                                      overflow: hidden;
-                                                                                              color: white;
-                                                                                                      border-radius: 8px;
-                                                                                                              font-family: "Microsoft Yahei";
-      }
+    .telephone{ background: lavender; color: blueviolet; border-radius: 10px; margin-left: 40px; text-align: center; }
+    .qrcode{ position: fixed; right: 0px; top: 0px;}
+    .qrcode a{display:block; width:40px;}
+    .qrcode a:hover,
+    .qrcode a:focus,
+    .qrcode a:active{ width: 200px; background: white; }
     </style>
-      <link href="css/bootstrap.css" rel="stylesheet">
-      <link href="css/bootstrap-responsive.css" rel="stylesheet">
-      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-          <!--[if lt IE 9]>
-            <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-            <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-            <![endif]-->
     </head>
     <body>
     <div class="navbar-wrapper">
@@ -296,13 +285,15 @@
                 <li><a href="#">酒店预定</a></li>
                 <li><a href="#">意大利</a></li>
                 <li><a href="#">摩洛哥</a></li>
+                <li><a class="telephone" href="#@" style="color:blueviolet;">138-0000-8888</a></li>
               </ul>
             </div><!--/.nav-collapse -->
-            <div id="telephone" class="clearfix">
-                <a href="https://www.facebook.com/Eurasia-281829942190180/" target="_blank" class="social-fb" title="http://facebook.com">Facebook</a>
-                <a href="" class="telephone">04 91 55 02 74</a>
-            </div>
           </div><!-- /.navbar-inner -->
+          <div class="qrcode">
+              <a href="#@">
+              <img src="img/qrcode.png">
+              </a>
+          </div>
         </div><!-- /.navbar -->
 
       </div> <!-- /.container -->
