@@ -132,3 +132,26 @@ body {
     margin-top: 120px;
   }
 }
+/* kuizhiqing */
+/* #563d7c
+ * #cdbfe3
+ * #f7f7f9
+ *
+ */
+.navbar-brand{
+    background: url(/assets/img/logo.png) no-repeat;
+    background-position: 8px 4px;
+    background-size: 54px;
+    width: 80px;
+}
+.navbar-inverse {
+    background-color: rgba(240, 240, 240, 0.15);
+    border-color: rgba(200, 200, 200, 0.2);
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color:  rgba(200, 200, 200, 0.5); 
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
