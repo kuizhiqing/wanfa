@@ -1,0 +1,2 @@
+exclude: [CNAME, LICENSE, README.md, release]
+permalink: /post/:title
