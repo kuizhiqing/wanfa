@@ -141,17 +141,49 @@ body {
 .navbar-brand{
     background: url(/assets/img/logo.png) no-repeat;
     background-position: 8px 4px;
-    background-size: 54px;
+    background-size: 62px;
     width: 80px;
 }
 .navbar-inverse {
+    font-size: 18px;
     background-color: rgba(240, 240, 240, 0.15);
     border-color: rgba(200, 200, 200, 0.2);
 }
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus,
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
     color: #fff;
     background-color:  rgba(200, 200, 200, 0.5); 
 }
 .navbar-inverse .navbar-nav > li > a {
     color: #fff;
+}
+.btn-primary {
+    background-color: rgba(240, 240, 240, 0.3);
+    border-color: rgba(200, 200, 200, 0.2);
+}
+.btn-primary:hover {
+    background-color:  rgba(200, 200, 200, 0.5); 
+    border-color: rgba(200, 200, 200, 0.6);
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color:  rgba(200, 200, 200, 0.5); 
+}
+.navbar-inverse .navbar-toggle {
+    background-color:  rgba(200, 200, 200, 0.3); 
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form,
+.navbar-inverse .navbar-toggle {
+    border-color: rgba(200, 200, 200, 0.2);
+}
+.telephone{
+    font-size: 16px;
+}
+.qrcode{
+    display: block;
+    width: 160px;
+    background: url(/assets/img/qrcode.png);
+    height: 160px;
+    background-size: cover;
+    margin: 10px;
 }
