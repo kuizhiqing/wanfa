@@ -1,6 +1,5 @@
     <div class="navbar-wrapper">
       <div class="container">
-
         <nav class="navbar navbar-inverse navbar-static-top">
           <div class="container">
             <div class="navbar-header">
@@ -14,13 +13,9 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">首页</a></li>
-                <li><a href="#">普罗旺斯</a></li>
-                <li><a href="#">婚纱摄影</a></li>
-                <li><a href="#">私人订制</a></li>
-                <li><a href="#">酒庄预定</a></li>
-                <li><a href="#">意大利</a></li>
-                <li><a href="#">摩洛哥</a></li>
+                  {% for i in site.data.nav %}
+                  <li><a href="{{ i.href }}">{{ i.title }}</a></li>
+                  {% endfor %}
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">联系我们<span class="caret"></span></a>
                   <ul class="dropdown-menu">
@@ -33,6 +28,5 @@
             </div>
           </div>
         </nav>
-
       </div>
     </div>

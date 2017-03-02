@@ -1,0 +1,9 @@
+<div class="container col-sm-3 siderbar">
+    {% for i in site.data.siderbar %}
+    <div class="sider">
+        <a href="{{ i.href }}" >
+            <img class="img-circle5" src="/assets/img/{{ i.img }}" width="200" height="200">
+        </a>
+    </div>
+    {% endfor %}
+</div>
