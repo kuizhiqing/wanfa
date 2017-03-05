@@ -3,11 +3,9 @@
 {% include header.html %}
 <div class="container-fluid" >
     <div class="container marketing col-sm-9">
-        <div class="inner-post">
-        {{ content }}
-        </div>
+    {% include post-content.html %}
     </div>
-{% include siderbar.html %}
+    {% include siderbar.html %}
 </div>
 {% include footer.html %}
 {% include foot.html %}

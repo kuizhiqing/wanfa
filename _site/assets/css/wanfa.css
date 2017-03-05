@@ -254,3 +254,6 @@ footer{
     float: left;
     max-width: 90%;
 }
+.nav-tabs {
+    margin-bottom: 20px;
+}
