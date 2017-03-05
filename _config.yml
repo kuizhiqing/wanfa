@@ -1,2 +1,3 @@
 exclude: [CNAME, LICENSE, README.md, release]
-permalink: /post/:title
+permalink: /:categories/:title.html
+include: ['_pages']

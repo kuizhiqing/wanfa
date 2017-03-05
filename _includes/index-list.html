@@ -1,21 +1,19 @@
-    <div class="container marketing col-sm-9">
-      <!-- Three columns of text below the carousel -->
-      {% for i in site.data.indexlist %} 
-      <div class="row">
-          <div class="group-title container-fluid">
-              <h2>{{ i.title }}</h2>
-          </div>
-          {% for it in i.items %}
+<div class="container marketing col-sm-9">
+    {% for i in site.data.indexlist %} 
+    <div class="row index-row">
+        <div class="group-title container-fluid">
+            <a href="/{{ i.sid }}/" >
+            <h2>{{ i.title }}</h2>
+            </a>
+        </div>
+        {% for it in site.categories[i.sid] limit:3 %}
         <div class="col-sm-4">
-            <img class="img-circle20" src="/assets/img/{{ it.img }}" alt="" width="200" height="200">
-            <h2>{{ it.title }}</h2>
+            <img class="img-circle20 img-thumbnail" src="/assets/img/{{ it.img }}" alt="" width="200" height="200">
+            <h3>{{ it.title }}</h3>
             <p>{{ it.des }}</p>
-            <p><a class="btn btn-default" href="{{ it.href }}" role="button">立即查看</a></p>
+            <p><a class="btn btn-default" href="/{{ i.sid }}/{{ it.name }}.html" role="button">立即查看</a></p>
         </div><!-- /.col-lg-4 -->
-          {% endfor %}
-      </div><!-- /.row -->
-          {% if forloop.last == false %}
-      <hr>
-          {% endif %}
-      {% endfor %}
-    </div>
+        {% endfor %}
+    </div><!-- /.row -->
+    {% endfor %}
+</div>

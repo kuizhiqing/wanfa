@@ -1,9 +1,24 @@
 <div class="container col-sm-3 siderbar">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">热门线路</h3>
+        </div>
+        <div class="panel-body">
+            Panel content
+        </div>
+    </div>
     {% for i in site.data.siderbar %}
     <div class="sider">
         <a href="{{ i.href }}" >
             <img class="img-circle5" src="/assets/img/{{ i.img }}" width="200" height="200">
         </a>
     </div>
+    <hr>
     {% endfor %}
+    <div class="sider">
+        <a href="#">
+            返回顶部
+        </a>
+    </div>
+
 </div>

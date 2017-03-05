@@ -1,55 +1,10 @@
 - 
-  title: 巴黎
-  items: 
-    - 
-      title: 什么
-      img: pic.png
-      des: xxxxx xxx
-      href: '#'
-    - 
-      title: 还有
-      img: pic.png
-      des: xxx xxx
-      href: \#
-    - 
-      title: zuihou
-      img: pic.png
-      des: xxx haha
-      href: \#
+  title: 普罗旺斯
+  sid: provence
 - 
   title: 巴黎
-  items: 
-    -
-      title: 什么
-      img: pic.png
-      des: xxxxx xxx
-      href: \#
-    -
-      title: 还有
-      img: pic.png
-      des: xxx xxx
-      href: \#
-    -
-      title: zuihou
-      img: pic.png
-      des: xxx haha
-      href: \#
+  sid: paris
 - 
-  title: 巴黎
-  items: 
-    - 
-      title: 什么
-      img: pic.png
-      des: xxxxx xxx
-      href: \#
-    - 
-      title: 还有
-      img: pic.png
-      des: xxx xxx
-      href: \#
-    - 
-      title: zuihou
-      img: pic.png
-      des: xxx haha
-      href: \#
+  title: 意大利
+  sid: italy
 
