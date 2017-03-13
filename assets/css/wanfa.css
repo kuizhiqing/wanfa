@@ -166,8 +166,8 @@ footer{
 }
 .navbar-brand{
     background: url(/assets/img/logo.png) no-repeat;
-    background-position: 8px 4px;
-    background-size: 62px;
+    background-position: 4px 4px;
+    background-size: 90px;
     width: 80px;
 }
 .navbar-inverse {
