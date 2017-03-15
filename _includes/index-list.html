@@ -8,12 +8,14 @@
         </div>
         {% for it in site.categories[i.sid] limit:3 %}
         <div class="col-sm-4">
-            <img class="img-circle20 img-thumbnail" src="/assets/img/{{ it.img }}" alt="" width="200" height="200">
+            <a href="/{{ i.sid }}/{{ it.name }}.html">
+            <img class="img-circle20 img-thumbnail index-img" src="/assets/img/{{ it.img }}" alt="" width="200" height="200">
             <h3>{{ it.title }}</h3>
             <p>{{ it.sum }}</p>
-            <p><a class="btn btn-default" href="/{{ i.sid }}/{{ it.name }}.html" role="button">立即查看</a></p>
-        </div><!-- /.col-lg-4 -->
+            </a>
+            <!-- p><a class="btn btn-default" href="/{{ i.sid }}/{{ it.name }}.html" role="button">立即查看</a></p-->
+        </div>
         {% endfor %}
-    </div><!-- /.row -->
+    </div>
     {% endfor %}
 </div>

@@ -151,7 +151,7 @@ header{
     top: 0;
     height: 100px;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 footer{
     position: absolute;
@@ -251,9 +251,16 @@ footer{
     width: 400px;
     height: auto;
     margin: 15px;
-    float: left;
     max-width: 90%;
+    border: #E1E1E1 4px solid;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
 }
 .nav-tabs {
     margin-bottom: 20px;
+}
+.post-header{
+    color: #666;
+}
+.index-img{
+    height:200px;
 }
