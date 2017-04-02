@@ -160,9 +160,41 @@ footer{
     text-align: center;
     vertical-align: baseline;
     width: 100%;
-    background: #444;
+    background: #563d7c;
     margin-top: 60px;
-    color: #ccc;
+    color: #fff;
+}
+.navbar {
+    margin-bottom: 0px; 
+}
+.navbar-static-top {
+    border-width: 0 0 0px;
+}
+.nav-list{
+    background-color: #563d7c;
+    width: 100%;
+    padding: 0 7%;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+.navbar .pull-right a {
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    padding: 0px 8px;
+    color: #fff;
+    background-color:#563d7c; 
+    font-size: 20px;
+    border-radius: 6px;
+}
+.navbar .pull-right {
+    margin-top: 28px;
+    text-align: right;
+}
+.navbar-nav>li>a {
+    line-height: 30px;
+    font-size: 20px;
 }
 .navbar-brand{
     background: url(/assets/img/logo.png) no-repeat;
