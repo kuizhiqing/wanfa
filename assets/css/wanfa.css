@@ -169,6 +169,7 @@ footer{
 }
 .navbar-static-top {
     border-width: 0 0 0px;
+    background-color: #fff;
 }
 .nav-list{
     background-color: #563d7c;
