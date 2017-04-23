@@ -1,0 +1,22 @@
+---
+title: 私人定制，提交成功
+layout: page
+sid: success
+permalink: /success/
+---
+<div class="container-fluid main-area" >
+    <div class="container marketing col-sm-9">
+        <h3>提交成功，请联系客户查看处理进度！</h3>
+        <br>
+        <h3> 热门城市</h3>
+        {% for post in site.categories.city %}
+        <div class="col-sm-2">
+            <a href="/city/{{ post.name }}.html">
+                <img class="img-circle5 img-thumbnail img-city" width="150" height="150" data-src="holder.js/500x500/auto" src="/assets/img/{{ post.img }}">
+                <h4 class="center-text">{{ post.title }}  <br></h4>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+    {% include siderbar.html %}
+</div>

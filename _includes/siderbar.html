@@ -1,5 +1,5 @@
 <div class="container col-sm-3 siderbar">
-    <div class="panel panel-default">
+    <!-- div class="panel panel-default">
         <div class="panel-heading">
             <a href="/city/" >
                 <h3 class="panel-title">热门城市</h3>
@@ -10,18 +10,26 @@
             <a href="/city/{{ post.name }}.html" class="list-group-item">{{ post.title }}</a>
             {% endfor %}
         </div>
-    </div>
+    </div-->
     <div class="panel panel-default">
         <div class="panel-heading">
-                <h3 class="panel-title">热门线路</h3>
+                <h3 class="panel-title">婚纱摄影</h3>
         </div>
         <div class="list-group panel-body">
-            <a href="#@" class="list-group-item">XXXX</a>
-            <a href="#@" class="list-group-item">XXXX</a>
-            <a href="#@" class="list-group-item">XXXX</a>
-            <a href="#@" class="list-group-item">XXXX</a>
+            <a href="/photograph/provence.html" class="list-group-item">薰衣草，等待爱情</a>
+            <a href="/photograph/paris.html" class="list-group-item">巴黎，流动的盛宴</a>
+            <a href="/photograph/portrait.html" class="list-group-item">普罗旺斯，个性写真</a>
         </div>
     </div>
+    {% if page.sid != 'index' %}
+    <hr>
+    <div class="sider">
+        <a href="/personal/" >
+            私人订制
+        </a>
+    </div>
+    <hr>
+    {% endif %}
     {% for i in site.data.siderbar %}
     <div class="sider">
         <a href="{{ i.href }}" >
@@ -31,8 +39,20 @@
     <hr>
     {% endfor %}
     <div class="sider">
-        <a href="#">
-            返回顶部
+        <a href="/transport/" >
+            机场/游轮接送
+        </a>
+    </div>
+    <hr>
+    <div class="sider">
+        <a href="/translator/" >
+            导游地陪/翻译
+        </a>
+    </div>
+    <hr>
+    <div class="sider">
+        <a href="/tickets/" >
+           巴黎景点门票优惠
         </a>
     </div>
 

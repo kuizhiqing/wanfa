@@ -1,18 +1,22 @@
 car1:
     title: 薰衣草
-    img: car1.jpg
+    img: car1.png
     des: xunyicao
     btn: 马上预定
     href: \#
 car2:
-    title: 薰衣草
-    img: car2.jpg
+    title: 向日葵
+    img: car2.png
     des: xunyicao
     btn: 马上预定
     href: \#
 car3:
     title: 薰衣草
-    img: car3.jpg
+    img: car3.png
     des: xunyicao
     btn: 马上预定
     href: \#
+car4:
+    img: car4.png
+car5:
+    img: car5.png

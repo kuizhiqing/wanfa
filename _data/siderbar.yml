@@ -1,15 +1,6 @@
 - 
-  img: pic.png
-  href: '#@' 
+  img: booking.png
+  href: '/booking/' 
 - 
-  img: pic.png
-  href: '#@' 
-- 
-  img: pic.png
-  href: '#@' 
-- 
-  img: pic.png
-  href: '#@' 
-- 
-  img: pic.png
-  href: '#@' 
+  img: sncf.png
+  href: '/sncf/' 

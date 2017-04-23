@@ -4,9 +4,158 @@ layout: page
 sid: personal
 permalink: /personal/
 ---
-<div class="container-fluid" >
+<div class="container-fluid main-area" >
     <div class="container marketing col-sm-9">
-        {% include list.html %}
+        <h3> 热门城市</h3>
+        {% for post in site.categories.city %}
+        <div class="col-sm-2">
+            <a href="/city/{{ post.name }}.html">
+                <img class="img-circle5 img-thumbnail img-city" width="150" height="150" data-src="holder.js/500x500/auto" src="/assets/img/{{ post.img }}">
+                <h4 class="center-text">{{ post.title }}  <br></h4>
+            </a>
+        </div>
+        {% endfor %}
+        <div class="col-sm-12">
+            <h3>私人订制</h3>
+            <form class="form" action="/success/" method="get">
+                <br>
+                <h4>基本信息</h4>
+                <br>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button">出发地</button>
+                            </span>
+                            <input type="text" class="form-control" required placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button">目的地</button>
+                            </span>
+                            <input type="text" class="form-control" required placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button">出发时间</button>
+                            </span>
+                            <input type="text" class="form-control" required placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button">天数</button>
+                            </span>
+                            <input type="text" class="form-control" required placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button">人数</button>
+                            </span>
+                            <input type="text" class="form-control" required placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button">儿童</button>
+                            </span>
+                            <input type="text" class="form-control" required placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h4>联系方式</h4>
+                <br>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button">姓名</button>
+                            </span>
+                            <input type="text" class="form-control" required placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button">性别</button>
+                            </span>
+                            <input type="text" class="form-control" required placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button">微信</button>
+                            </span>
+                            <input type="text" class="form-control" required placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button">邮箱</button>
+                            </span>
+                            <input type="text" class="form-control" required placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h4>特殊要求</h4>
+                <br>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button">服务车型</button>
+                            </span>
+                            <input type="text" class="form-control" required placeholder="5座车，7座车，9座车">
+                        </div>
+                    </div>
+                    </div>
+                    <br>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button">酒店星级</button>
+                            </span>
+                            <input type="text" class="form-control" required placeholder="三星级，四星级，五星级，快捷经济，名宿">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button">其他</button>
+                            </span>
+                            <input type="text" class="form-control" required placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <button class="submit_per btn btn-lg btn-primary btn-block" type="submit">提交定制</button>
+            </form>
+        </div>
     </div>
-{% include siderbar.html %}
+    {% include siderbar.html %}
 </div>
