@@ -1,12 +1,27 @@
 ---
-title: 酒庄预定
+title: 酒庄预订
 layout: page
 sid: winery
 permalink: /winery/
 ---
-<div class="container-fluid" >
+<div class="container-fluid main-area" >
     <div class="container marketing col-sm-9">
-        {% include list.html %}
+        <h3> 热门酒庄</h3>
+        {% for post in site.categories.winery reversed %}
+        <div class="col-sm-6 center-text">
+            <a href="/winery/{{ post.name }}.html">
+                <img class="img-circle5 img-thumbnail img-city" width="250" height="250" data-src="holder.js/500x500/auto" src="/assets/img/{{ post.img }}">
+                <h4 class="center-text">{{ post.title }}  <br></h4>
+            </a>
+        </div>
+        {% endfor %}
+        <div class="col-sm-12 center-text">
+        <br>
+        <p>
+        <br>
+        </p>
+        <h3> 预订请联系客服</h3>
+        </div>
     </div>
-{% include siderbar.html %}
+    {% include siderbar.html %}
 </div>

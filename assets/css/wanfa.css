@@ -351,3 +351,8 @@ footer a{
     font-family: fantasy;
     color: #6f4ea0;
 }
+.panel-default>.panel-heading {
+    color: #fff;
+    background-color: #563d7c;
+    border-color: #ddd;
+}

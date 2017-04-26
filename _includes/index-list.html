@@ -6,7 +6,8 @@
             <h2>{{ i.title }}</h2>
             </a>
         </div>
-        {% for it in site.categories[i.sid] limit:3 %}
+        {% for it in site.categories[i.sid] reversed %}
+        {% if forloop.index < 4 %}
         <div class="col-sm-4">
             <a href="/{{ i.sid }}/{{ it.name }}.html">
             <img class="img-circle20 img-thumbnail index-img" src="/assets/img/{{ it.img }}" alt="" width="200" height="200">
@@ -15,6 +16,7 @@
             </a>
             <!-- p><a class="btn btn-default" href="/{{ i.sid }}/{{ it.name }}.html" role="button">立即查看</a></p-->
         </div>
+        {% endif %}
         {% endfor %}
     </div>
     {% endfor %}

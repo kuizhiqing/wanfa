@@ -21,23 +21,6 @@
             <a href="/photograph/portrait.html" class="list-group-item">普罗旺斯，个性写真</a>
         </div>
     </div>
-    {% if page.sid != 'index' %}
-    <hr>
-    <div class="sider">
-        <a href="/personal/" >
-            私人订制
-        </a>
-    </div>
-    <hr>
-    {% endif %}
-    {% for i in site.data.siderbar %}
-    <div class="sider">
-        <a href="{{ i.href }}" >
-            <img class="img-circle5" src="/assets/img/{{ i.img }}" width="200" height="200">
-        </a>
-    </div>
-    <hr>
-    {% endfor %}
     <div class="sider">
         <a href="/transport/" >
             机场/游轮接送
@@ -53,7 +36,25 @@
     <div class="sider">
         <a href="/tickets/" >
            巴黎景点门票优惠
+            <img class="img-circle5" src="/assets/img/fmshow.png" width="200" height="">
         </a>
     </div>
+    {% if page.sid != 'index' %}
+    <hr>
+    <div class="sider">
+        <a href="/personal/" >
+            <img class="img-circle5" src="/assets/img/personal.png" width="200" height="200">
+        </a>
+    </div>
+    {% endif %}
+    <hr>
+    {% for i in site.data.siderbar %}
+    <div class="sider">
+        <a href="{{ i.href }}" >
+            <img class="img-circle5" src="/assets/img/{{ i.img }}" width="200" height="200">
+        </a>
+    </div>
+    <hr>
+    {% endfor %}
 
 </div>

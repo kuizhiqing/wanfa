@@ -1,4 +1,4 @@
-{% for post in site.categories[page.sid] %}
+{% for post in site.categories[page.sid] reversed %}
 <div class="row featurette">
     <a href="/{{ page.sid }}/{{ post.name }}.html">
         <div class="col-md-5">
@@ -7,6 +7,7 @@
         <div class="col-md-7">
             <h2 class="featurette-heading">{{ post.title }}  <br></h2>
             <p class="lead">
+            <br>
             {{ post.des }}
             </p>
         </div>
