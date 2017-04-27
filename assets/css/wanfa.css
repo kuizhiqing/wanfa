@@ -3,8 +3,10 @@
 /* Padding below the footer and lighter body text */
 
 body {
-    padding-bottom: 40px;
+    padding-bottom: 0px;
     color: #5a5a5a;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 a,
 a:focus, a:hover
@@ -154,7 +156,7 @@ header{
     margin-bottom: 20px;
 }
 footer{
-    position: absolute;
+    position: relative;
     line-height: 22px;
     text-align: center;
     vertical-align: baseline;
