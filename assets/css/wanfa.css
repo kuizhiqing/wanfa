@@ -92,7 +92,7 @@ a:focus, a:hover
 ------------------------- */
 
 .featurette-divider {
-    margin: 60px 0; /* Space out the Bootstrap <hr> more */
+    margin: 30px 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
@@ -357,4 +357,8 @@ footer a{
     color: #fff;
     background-color: #563d7c;
     border-color: #ddd;
+}
+.list-img{
+    height: 270px;
+    width: 360px;
 }

@@ -1,8 +1,9 @@
+<br>
 {% for post in site.categories[page.sid] reversed %}
 <div class="row featurette">
     <a href="/{{ page.sid }}/{{ post.name }}.html">
         <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block img-circle5 img-thumbnail" data-src="holder.js/500x500/auto" src="/assets/img/{{ post.img }}" data-holder-rendered="true">
+            <img class="featurette-image img-responsive list-img center-block img-circle5 img-thumbnail" data-src="holder.js/500x500/auto" src="/assets/img/{{ post.img }}" data-holder-rendered="true">
         </div>
         <div class="col-md-7">
             <h2 class="featurette-heading">{{ post.title }}  <br></h2>
